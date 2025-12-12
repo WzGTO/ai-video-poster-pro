@@ -1,0 +1,38 @@
+{
+    "extends": "next/core-web-vitals",
+    "rules": {
+        "react-hooks/exhaustive-deps": "warn",
+        "react-hooks/rules-of-hooks": "error",
+        "@next/next/no-img-element": "warn",
+        "no-console": [
+            "warn",
+            {
+                "allow": [
+                    "warn",
+                    "error"
+                ]
+            }
+        ],
+        "prefer-const": "error",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            {
+                "argsIgnorePattern": "^_",
+                "varsIgnorePattern": "^_"
+            }
+        ]
+    },
+    "overrides": [
+        {
+            "files": [
+                "*.test.ts",
+                "*.test.tsx",
+                "__tests__/**/*"
+            ],
+            "rules": {
+                "no-console": "off"
+            }
+        }
+    ]
+}
